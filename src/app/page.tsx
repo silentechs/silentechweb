@@ -100,7 +100,7 @@ export default function Home() {
             <section id="products" className="py-32 px-6 md:px-24 bg-[#0d0d0d]">
                 <div className="flex justify-between items-end mb-16">
                     <h2 className="text-4xl md:text-7xl font-bold tracking-tighter">Featured <br /> Projects</h2>
-                    <span className="text-sm font-mono opacity-40 mb-4">[ 01 — 03 ]</span>
+                    <span className="text-sm font-mono opacity-40 mb-4">[ 01 — 05 ]</span>
                 </div>
 
                 <div className="space-y-12">
@@ -108,30 +108,73 @@ export default function Home() {
                     <Link
                         href="https://www.stitchcraft.live/"
                         target="_blank"
-                        className="group block relative p-12 bg-white/5 border border-white/10 hover:border-[#ff4d00]/30 transition-all duration-700 overflow-hidden"
+                        className="group relative h-[60vh] rounded-3xl overflow-hidden border border-white/10 block"
                     >
-                        <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 relative z-10">
-                            <div>
-                                <h3 className="text-3xl md:text-5xl font-bold mb-4 group-hover:text-[#ff4d00] transition-colors">StitchCraft</h3>
-                                <p className="text-xl opacity-60">Digital management for the Ghanaian fashion industry.</p>
+                        <Image
+                            src="/project-stitchcraft.png?v=2"
+                            alt="StitchCraft Interface"
+                            fill
+                            className="object-cover transition-transform duration-700 group-hover:scale-105 opacity-60 group-hover:opacity-40"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent p-12 flex flex-col justify-end">
+                            <div className="flex justify-between items-end">
+                                <div>
+                                    <h3 className="text-4xl md:text-6xl font-bold mb-4 group-hover:text-[#ff4d00] transition-colors">StitchCraft</h3>
+                                    <p className="text-xl md:text-2xl opacity-80 max-w-2xl">Digital management for the Ghanaian fashion industry.</p>
+                                </div>
+                                <ArrowUpRight className="w-12 h-12 opacity-0 group-hover:opacity-100 transition-all duration-500 -translate-x-4 translate-y-4 group-hover:translate-x-0 group-hover:translate-y-0" />
                             </div>
-                            <ArrowUpRight className="w-12 h-12 opacity-20 group-hover:opacity-100 group-hover:translate-x-2 group-hover:-translate-y-2 transition-all" />
                         </div>
-                        <div className="absolute top-0 right-0 w-1/2 h-full bg-[#ff4d00]/5 blur-[120px] -translate-y-full group-hover:translate-y-0 transition-transform duration-1000"></div>
                     </Link>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+                        {/* Silent Voice - Featured */}
+                        <Link
+                            href="https://www.silentvoice.online/"
+                            target="_blank"
+                            className="group relative aspect-[4/3] rounded-3xl overflow-hidden border border-white/10 block"
+                        >
+                            <Image
+                                src="/project-silentvoice.png?v=2"
+                                alt="Silent Voice Interface"
+                                fill
+                                className="object-cover transition-transform duration-700 group-hover:scale-105 opacity-60 group-hover:opacity-40"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent p-10 flex flex-col justify-end">
+                                <h3 className="text-3xl font-bold mb-2 group-hover:text-[#ff4d00] transition-colors">Silent Voice</h3>
+                                <p className="opacity-80">A collection of poems where the whispered words of the spirit find their eternal resonance.</p>
+                            </div>
+                        </Link>
+
+                        {/* WEE-North Network - Featured */}
+                        <Link
+                            href="https://weenorth.vercel.app/"
+                            target="_blank"
+                            className="group relative aspect-[4/3] rounded-3xl overflow-hidden border border-white/10 block"
+                        >
+                            <Image
+                                src="/project-weenorth.png?v=2"
+                                alt="WEE-North Network Interface"
+                                fill
+                                className="object-cover transition-transform duration-700 group-hover:scale-105 opacity-60 group-hover:opacity-40"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent p-10 flex flex-col justify-end">
+                                <h3 className="text-3xl font-bold mb-2 group-hover:text-[#ff4d00] transition-colors">WEE-North Network</h3>
+                                <p className="opacity-80">Empowering women in industrial trades across Northern Ghana.</p>
+                            </div>
+                        </Link>
+
                         {/* Maternalcare */}
-                        <div className="p-12 border border-white/5 bg-white/[0.02]">
+                        <div className="p-12 border border-white/5 bg-white/[0.02] rounded-3xl hover:bg-white/[0.04] transition-colors">
                             <Heart className="w-8 h-8 text-[#ff4d00] mb-6" />
                             <h3 className="text-2xl font-bold mb-4">Maternalcare</h3>
                             <p className="opacity-50 font-light">
-                                Specialized healthcare management systems designed to improve maternal outcomes through digital tracking.
+                                Specialized healthcare management systems designed to improve maternal outcomes.
                             </p>
                         </div>
 
                         {/* Custom Solutions */}
-                        <div className="p-12 border border-white/5 bg-white/[0.02]">
+                        <div className="p-12 border border-white/5 bg-white/[0.02] rounded-3xl hover:bg-white/[0.04] transition-colors">
                             <Globe className="w-8 h-8 text-[#ff4d00] mb-6" />
                             <h3 className="text-2xl font-bold mb-4">Custom Enterprise</h3>
                             <p className="opacity-50 font-light">
@@ -160,7 +203,7 @@ export default function Home() {
                 </div>
 
                 <div className="pt-12 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6 opacity-30 text-xs uppercase tracking-widest">
-                    <p>© 2025 Silentech Solution Limited</p>
+                    <p>© {new Date().getFullYear()} SILENTECH SOLUTION ENTERPRISE</p>
                     <div className="flex gap-8">
                         <span>Tamale</span>
                         <span>Accra</span>
