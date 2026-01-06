@@ -17,10 +17,10 @@ export default function Home() {
             {/* Navigation */}
             <nav className="fixed top-0 w-full z-50 px-6 py-8 flex justify-between items-center mix-blend-difference">
                 <div className="flex items-center gap-3">
-                    <div className="relative w-8 h-8">
+                    <div className="relative w-20 h-20">
                         <Image src="/logo.png" alt="Silentech Logo" fill className="object-contain" />
                     </div>
-                    <span className="text-xl font-bold tracking-tighter">SILENTECH</span>
+                    <span className="text-xl font-bold tracking-tighter">SILENTECH SOLUTION</span>
                 </div>
                 <div className="hidden md:flex gap-12 text-sm font-medium tracking-widest uppercase opacity-60">
                     <a href="#mission" className="hover:opacity-100 transition-opacity">Mission</a>
@@ -114,9 +114,9 @@ export default function Home() {
                             src="/project-stitchcraft.png?v=2"
                             alt="StitchCraft Interface"
                             fill
-                            className="object-cover transition-transform duration-700 group-hover:scale-105 opacity-60 group-hover:opacity-40"
+                            className="object-cover transition-transform duration-700 group-hover:scale-105"
                         />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent p-12 flex flex-col justify-end">
+                        <div className="absolute inset-0 p-12 flex flex-col justify-end">
                             <div className="flex justify-between items-end">
                                 <div>
                                     <h3 className="text-4xl md:text-6xl font-bold mb-4 group-hover:text-[#ff4d00] transition-colors">StitchCraft</h3>
@@ -138,9 +138,9 @@ export default function Home() {
                                 src="/project-silentvoice.png?v=2"
                                 alt="Silent Voice Interface"
                                 fill
-                                className="object-cover transition-transform duration-700 group-hover:scale-105 opacity-60 group-hover:opacity-40"
+                                className="object-cover transition-transform duration-700 group-hover:scale-105"
                             />
-                            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent p-10 flex flex-col justify-end">
+                            <div className="absolute inset-0 p-10 flex flex-col justify-end">
                                 <h3 className="text-3xl font-bold mb-2 group-hover:text-[#ff4d00] transition-colors">Silent Voice</h3>
                                 <p className="opacity-80">A collection of poems where the whispered words of the spirit find their eternal resonance.</p>
                             </div>
@@ -156,9 +156,9 @@ export default function Home() {
                                 src="/project-weenorth.png?v=2"
                                 alt="WEE-North Network Interface"
                                 fill
-                                className="object-cover transition-transform duration-700 group-hover:scale-105 opacity-60 group-hover:opacity-40"
+                                className="object-cover transition-transform duration-700 group-hover:scale-105"
                             />
-                            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent p-10 flex flex-col justify-end">
+                            <div className="absolute inset-0 p-10 flex flex-col justify-end">
                                 <h3 className="text-3xl font-bold mb-2 group-hover:text-[#ff4d00] transition-colors">WEE-North Network</h3>
                                 <p className="opacity-80">Empowering women in industrial trades across Northern Ghana.</p>
                             </div>
@@ -167,7 +167,7 @@ export default function Home() {
                         {/* Maternalcare */}
                         <div className="p-12 border border-white/5 bg-white/[0.02] rounded-3xl hover:bg-white/[0.04] transition-colors">
                             <Heart className="w-8 h-8 text-[#ff4d00] mb-6" />
-                            <h3 className="text-2xl font-bold mb-4">Maternalcare</h3>
+                            <h3 className="text-2xl font-bold mb-4">Medical Care Custom Solutions</h3>
                             <p className="opacity-50 font-light">
                                 Specialized healthcare management systems designed to improve maternal outcomes.
                             </p>
@@ -178,7 +178,7 @@ export default function Home() {
                             <Globe className="w-8 h-8 text-[#ff4d00] mb-6" />
                             <h3 className="text-2xl font-bold mb-4">Custom Enterprise</h3>
                             <p className="opacity-50 font-light">
-                                Tailored web architecture for NGOs, Business Entities, and Government institutions.
+                                Tailored web application for NGOs, Business Entities, and Government institutions.
                             </p>
                         </div>
                     </div>
