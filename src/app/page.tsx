@@ -203,7 +203,7 @@ export default function Home() {
                 </div>
 
                 <div className="pt-12 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6 opacity-30 text-xs uppercase tracking-widest">
-                    <p>© {new Date().getFullYear()} SILENTECH SOLUTION ENTERPRISE</p>
+                    <p>© {new Date().getFullYear()} SILENTECH SOLUTION ENTERPRISE - Ver. 2.0</p>
                     <div className="flex gap-8">
                         <span>Tamale</span>
                         <span>Accra</span>
