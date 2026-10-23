@@ -31,3 +31,14 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# remotion video project
+/video/node_modules
+/video/out
+
+# local agent and browser artifacts
+/.playwright-mcp/
+/.claude/
+.env
+.env.*
+!.env.example
